@@ -1,0 +1,40 @@
+@import "tailwindcss";
+/* Navbar.css */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111827;
+  --card-bg: #f9fafb;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #e5e7eb;
+  --card-bg: #1e293b;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg);
+}
+
+
+/* Add to your global.css or tailwind.config.js animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
