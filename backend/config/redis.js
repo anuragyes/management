@@ -1,12 +1,12 @@
 import Redis from "ioredis";
 
 const redis = new Redis(process.env.REDIS_URL, {
+  tls: {},
   maxRetriesPerRequest: 5,
-  enableReadyCheck: true,
 });
 
 redis.on("connect", () => {
-  console.log("✅ Redis connected");
+  console.log("✅ Redis connected (Upstash)");
 });
 
 redis.on("error", (err) => {
@@ -14,6 +14,7 @@ redis.on("error", (err) => {
 });
 
 export default redis;
+
 
 
 
