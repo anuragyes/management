@@ -361,7 +361,7 @@ const HomePage = () => {
                     {index === 3 && 'Skill development sessions and hands-on learning'}
                   </p>
                   <Link 
-                    to={`/events?category=${category.name.toLowerCase().split(' ')[0]}`}
+                    {/* to={`/events?category=${category.name.toLowerCase().split(' ')[0]}`} */}
                     className={`inline-flex items-center space-x-2 ${theme === 'light' 
                       ? 'text-blue-600 hover:text-blue-700' 
                       : 'text-blue-400 hover:text-blue-300'
