@@ -54,7 +54,8 @@ export const RazorpayApiInstanceHistory = `${BASE_URL}/api/account/razorpay/hist
 
 
 
-
+// Team apis 
+export const TeamMemberApi = `${BASE_URL}/api/teammember/getAllTeammember`;
 
 
 
