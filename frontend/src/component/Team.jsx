@@ -15,6 +15,7 @@ import {
     Heart,
     Sparkles
 } from 'lucide-react';
+import { TeamMemberApi } from '../ApiInstance/Allapis';
 import { useTheme } from '../Context/TheamContext';
 // import { Trophy, Music, Wrench, Palette, Calendar, Users } from "lucide-react";
 const TeamPage = () => {
@@ -31,10 +32,10 @@ const TeamPage = () => {
     const fetchTeamMembers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/teammember/getAllTeammember"
+         TeamMemberApi
         );
 
-          console.log("098765434567890-987654567890-098765" , response.data.data)
+          // console.log("098765434567890-987654567890-098765" , response.data.data)
 
         // Adjust according to your API response shape
         setTeamMembers(response.data.data || []);
