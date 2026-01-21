@@ -19,6 +19,20 @@ import Mission from './component/pages/Mission';
 import AboutHistory from './component/pages/AboutHistory';
 import EventGallery from './component/pages/Photos';
 import EventManagementDashboard from './component/Role/Organizer';
+import AdminRegisterpage from './Context/AdminRegisterpage';
+import AdminRegister from './Context/AdminRegisterpage';
+import AdminLoginPage from './Context/AdminLoginPage';
+import { OrgainserLogin, OrgainserRegsiter } from './ApiInstance/Allapis';
+import OrganiserRegister from './Context/OrgainserRegister';
+import OraginserLoginPage from './Context/OrgainserLogin';
+import Gallerymemories from './component/pages/Gallerymemories';
+import Galleryvideos from './component/pages/Galleryvideos';
+import Gold from './component/pages/Sponsors/Gold';
+import Sliver from './component/pages/Sponsors/Sliver';
+import Bronze from './component/pages/Sponsors/Bronze';
+import Support from './component/pages/Contact/Support';
+import FeedBack from './component/pages/Contact/FeedBack';
+import Emergency from './component/pages/Contact/Emergency';
 
 
 const App = () => {
@@ -45,7 +59,24 @@ const App = () => {
         <Route path="/OrgniserDashboard" element={<EventManagementDashboard />} />
         <Route path="/about/history" element={<AboutHistory />} />
         <Route path="/gallery/photos" element={<EventGallery />} />
+        <Route path="/AdminRegsiterPage" element={<AdminRegister />} />
+        <Route path="/AdminLoginPage" element={<AdminLoginPage />} />
 
+
+        <Route path="/OrganiserRegsiterPage" element={<OrganiserRegister />} />
+        <Route path="/OrgainserLoginPage" element={<OraginserLoginPage />} />
+
+        {/* /gallery/memories */}
+
+        <Route path="/gallery/memories" element={<Gallerymemories />} />
+
+        <Route path='/gallery/videos' element={<Galleryvideos />} />
+        <Route path='/sponsors/gold' element={<Gold />} />
+        <Route path='/sponsors/silver' element={<Sliver />} />
+        <Route path='/sponsors/bronze' element={<Bronze />} />
+        <Route path='/contact/support' element={<Support />} />
+        <Route path='/contact/feedback' element={<FeedBack />} />
+        <Route path='/contact/emergency' element={<Emergency />} />
       </Routes>
       {/* Global Footer */}
       <Footer />
