@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../../Context/TheamContext';
-import { FaHourglassStart } from 'react-icons/fa';
+// import { FaHourglassStart } from 'react-icons/fa';
 
 const Emergency = () => {
   const { theme } = useTheme();
@@ -23,5 +23,6 @@ const Emergency = () => {
     </div>
   );
 };
+
 
  export default Emergency
