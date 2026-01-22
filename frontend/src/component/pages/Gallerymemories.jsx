@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../Context/TheamContext';
-import { FaHourglassStart } from 'react-icons/fa';
+
 
 const Gallerymemories = () => {
   const { theme } = useTheme();
@@ -18,10 +18,11 @@ const Gallerymemories = () => {
         fontWeight: "bold",
       }}
     >
-         {/* <FaHourglassStart size={50} color="orange" /> */}
+        
       Coming Soon Memories Gallery  🚀
     </div>
   );
 };
 
  export default Gallerymemories
+
